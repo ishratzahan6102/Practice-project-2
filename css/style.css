@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+Body{
+    background-color: lavender;
+    font-family: 'Jomhuria', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+}
+Section{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+
+}
+main{
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.section-title{
+    color: rgb(133, 10, 182);
+    margin-top: 40px;
+}
+.top-players, .blogs, .Courses{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 40px;
+    place-items: center;
+    
+}
+.Courses{
+    grid-template-columns: repeat(3, 1fr); 
+    
+}
+.top-players {
+    grid-template-columns: repeat(3, 1fr);   
+}
+.blogs{
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.players, .Blog{
+    display: flex;
+    align-items: center;
+}
+.players img{
+    height: 50px;
+    margin-right: 20px;
+}
+.thumbnails img{
+    width: 150px;
+    margin-right: 20px;
+}
+.Course img{
+   width: 200px;
+}
+@media (max-width: 992px) {
+.top-players {
+    grid-template-columns: repeat(2, 1fr);    
+}
+.blogs{
+    grid-template-columns: repeat(1, 1fr);  
+}
+.Courses{
+    grid-template-columns: repeat(1, 1fr); 
+}
+}
+@media (max-width: 668px) {
+.top-players{
+    grid-template-columns: repeat(1, 1fr);    
+}
+.Blog{
+    display: block;
+}
+.Courses{
+    display: block;
+}
+}
+.filled{
+    color: goldenrod;
+    font-size: 0.6em;
+}
+.unfilled{
+    color : lightgray;
+    font-size: 0.6em;
+}
+.course-info{
+    display: flex;
+}
+span{
+    color: tomato;
+}
+.during{
+    margin-left: 50px;
+    color: tomato;
+    font-size: .9em;
+    background-color: lightpink;
+    border-radius: 8px;
+    padding: 2px;
+}
+.nav-bar{
+    background-color: rgb(75, 15, 143);
+    display: block;
+    border: 1px ;
+    padding: 20px;
+    display: flex;
+}
+.nav-bar h1 {
+    color: white;
+    padding: 10px;
+    
+}
+.nav-bar i{
+    font-size: 3em;
+    color: white;
+    margin-left: 270px;
+    border: 5px solid white;
+    border-radius: 250px;
+    padding: 5px;
+}
+
